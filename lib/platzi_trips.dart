@@ -4,6 +4,8 @@ import 'search_trips.dart';
 import 'profile_trips.dart';
 
 class PlatziTrips extends StatefulWidget {
+  const PlatziTrips({super.key});
+
   @override
   State<PlatziTrips> createState() {
     return _PlatziTripsState();
@@ -36,7 +38,7 @@ class _PlatziTripsState extends State<PlatziTrips> {
           child: BottomNavigationBar(
               onTap: onTapTapped,
               currentIndex: indexTap,
-              items: [
+              items: const [
                 BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.search), label: 'Search'),
