@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'platzi_trips.dart';
 import 'login.dart';
+import 'app_card.dart';
+import 'app_card_list.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const Login(),
+      home: const AppCardList(),
 
       //const MyHomePage(title: 'Flutter Demo Home Page'),
     );
