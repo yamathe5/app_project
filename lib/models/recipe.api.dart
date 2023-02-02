@@ -13,15 +13,12 @@ class RecipeApi {
     });
 
     Map data = jsonDecode(response.body);
-    // print(response.body);
     List _temp = [];
     for (var i in data['feed']) {
       if (i['content']['details'] != null &&
           i['content']['details']['name'] != null &&
           i['content']['details']['images'][0] != null &&
           i['content']['details']['rating'] != null) {
-        print(i['content']['details']);
-        print('\n==========================\n');
         _temp.add(i['content']['details']);
       }
     }

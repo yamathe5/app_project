@@ -17,7 +17,7 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final star_half = Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         top: 350.0,
         right: 3.0,
       ),

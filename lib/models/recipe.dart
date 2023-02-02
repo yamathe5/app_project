@@ -8,7 +8,6 @@ class Recipe {
       {this.name = '', this.images = '', this.rating = 0, this.totalTime = ''});
 
   factory Recipe.fromJson(dynamic json) {
-    print('Recipe.fromJson');
     return Recipe(
         name: json['name'] as String,
         images: json['images'][0]['hostedLargeUrl'] as String,
